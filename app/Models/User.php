@@ -50,4 +50,19 @@ public function posts()
     return $this->hasMany(Post::class);
 }
 
+public function isAdmin()
+{
+    return $this->role === 'admin';
+}
+
+public function isEditor()
+{
+    return $this->role === 'editor';
+}
+
+public function isUser()
+{
+    return $this->role === 'user';
+}
+
 }

@@ -6,8 +6,14 @@ use App\Http\Controllers\Auth\TwoFactorAuthController;
 use App\Http\Controllers\Auth\SettingsController;
 use App\Http\Controllers\Auth\GithubController;
 use App\Http\Controllers\PostController;
+use App\Http\Controllers\UserController;
 
 
+// Rota para exibir a página de gestão de usuários
+Route::get('users/manage', [UserController::class, 'index'])->name('users.manage');
+
+// Rota para atualizar o nível de acesso de um usuário
+Route::put('users/{user}/update-role', [UserController::class, 'updateRole'])->name('users.updateRole');
 
 Route::resource('posts', PostController::class);
 

@@ -194,7 +194,7 @@
                 <i class="bi bi-house-door nav-icon"></i>
                 Dashboard
             </a>
-            <a href="/users" class="nav-link">
+            <a href="/users/manage" class="nav-link">
                 <i class="bi bi-person-lines-fill nav-icon"></i>
                 Usuários
             </a>
