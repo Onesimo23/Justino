@@ -1,4 +1,4 @@
 1- Lazy loading vs. Eager loading
-2- Rastreamento de mudanças em modelos
+2- Autenticação e Auorização(policy)
 3- Autenticação em dois factores (email via mailtrap)
 4- 
